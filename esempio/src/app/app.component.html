@@ -1,0 +1,41 @@
+
+<button (click)="visibile = !visibile">mostra/nascondi</button>
+<h1> visibile: {{visibile}}</h1>
+<hr>
+<div *ngIf="visibile; else alterantiva">
+ 
+   <p> esempio *nIf</p>
+    si vede quando visibile è true
+
+</div>
+<hr>
+<ng-template #alterantiva>
+    <div>
+        <h1>sono nell'else</h1>
+    </div>
+</ng-template>
+
+
+
+
+
+
+
+<!-- <h1>ciao {{contatoreGlobale}}</h1>
+
+<hr>
+
+<li>primo</li>
+<li>secondo</li> -->
+
+<!-- 
+<app-elenco 
+    [titolo]=" 'titolo passato da app root'   "
+    (eventoContatore)="eventoContatore($event)">
+</app-elenco>
+<p>valore del contatore della prima componente {{contatoreGlobale}}</p>
+<hr>
+<app-elenco 
+    [titolo]="title"
+    (eventoContatore)="eventoContatore($event)">
+    </app-elenco> --> 
